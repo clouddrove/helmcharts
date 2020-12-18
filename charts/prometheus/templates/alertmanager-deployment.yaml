@@ -61,7 +61,7 @@ spec:
             httpGet:
               path: {{ .Values.alertmanager.prefixURL }}/#/status
               port: 9093
-              scheme: http
+              scheme: HTTP
             initialDelaySeconds: 30
             timeoutSeconds: 30
           resources:
@@ -72,6 +72,9 @@ spec:
             - name: storage-volume
               mountPath: "{{ .Values.alertmanager.persistentVolume.mountPath }}"
               subPath: "{{ .Values.alertmanager.persistentVolume.subPath }}"
+            - name: email-config
+              mountPath: /etc/config/email
+              readOnly: true         
           {{- range .Values.alertmanager.extraSecretMounts }}
             - name: {{ .name }}
               mountPath: {{ .mountPath }}
@@ -120,6 +123,9 @@ spec:
           secret:
             secretName: {{ .Values.alertmanager.configFromSecret }}
           {{- end }}
+        - name: email-config
+          configMap:
+            name: {{ template "prometheus.alertmanager.fullname" . }}-email-config
       {{- range .Values.alertmanager.extraSecretMounts }}
         - name: {{ .name }}
           secret:
