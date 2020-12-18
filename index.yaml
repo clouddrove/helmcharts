@@ -1,80 +1,11 @@
 apiVersion: v1
 entries:
-  cadvisor:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-12-14T14:44:50.812730472Z"
-    description: A Helm chart for Kubernetes
-    digest: 437d7263e9cbb8a79819ca7233a855160d13efbd900a2bfb83deaf4f8f1f473d
-    name: cadvisor
-    type: application
-    urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/cadvisor-0.1.6/cadvisor-0.1.6.tgz
-    version: 0.1.6
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-12-13T16:25:30.582571841Z"
-    description: A Helm chart for Kubernetes
-    digest: 3b1a69eef2cef8346be2ba471169b94a5c719406b648d56b07d21882e10a235e
-    name: cadvisor
-    type: application
-    urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/cadvisor-0.1.3/cadvisor-0.1.3.tgz
-    version: 0.1.3
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-12-12T19:47:08.928839787Z"
-    description: A Helm chart for Kubernetes
-    digest: e45b6ab60162ee5191f58472d87e8e653468cc9856a16b8614cbbdd73f276996
-    name: cadvisor
-    type: application
-    urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/cadvisor-0.1.1/cadvisor-0.1.1.tgz
-    version: 0.1.1
-  kubewatch:
-  - annotations:
-      category: Infrastructure
-    apiVersion: v2
-    appVersion: 0.1.0
-    created: "2020-12-14T15:33:21.677099203Z"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: Kubewatch is a Kubernetes watcher that currently publishes notification to Slack.
-    digest: b0dba006337df56baf1b0d1d6cec4dbfdec0f03005eed0c881a26925fe40ec1a
-    home: https://github.com/bitnami/charts/tree/master/bitnami/kubewatch
-    icon: https://bitnami.com/assets/stacks/kubewatch/img/kubewatch-stack-220x234.png
-    keywords:
-    - kubernetes
-    - slack
-    - hipchat
-    - mattermost
-    - flock
-    - msteams
-    name: kubewatch
-    urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/kubewatch-0.1.1/kubewatch-0.1.1.tgz
-    version: 0.1.1
-  metrics-server:
-  - apiVersion: v2
-    appVersion: 1.16.1
-    created: "2020-12-12T18:32:16.814033Z"
-    description: A Helm chart for Kubernetes
-    digest: 40cce923f77753f3781a8f3f70f3bd23dceb28ff7d4380e5c24299def03e0702
-    name: metrics-server
-    type: application
-    urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/metrics-server-0.1.1/metrics-server-0.1.1.tgz
-    version: 0.1.1
   prometheus:
   - apiVersion: v1
-    appVersion: 2.13.1
-    created: "2020-12-13T07:11:10.0493953Z"
+    appVersion: 2.22.0
+    created: "2020-12-18T23:51:24.322177546Z"
     description: Prometheus is a monitoring system and time series database.
-    digest: 53fcb4d2dbc4f79b65c8efb41e3ee4fae0213fb0c39fb97f7dc5e978e13cc3e9
+    digest: d0d98cab7a6fc2f4c0d16f2671cfc3886185bf8282f3a22960a48552c09b7bf0
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     name: prometheus
@@ -85,6 +16,6 @@ entries:
     - https://github.com/prometheus/node_exporter
     - https://github.com/kubernetes/kube-state-metrics
     urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-9.5.3/prometheus-9.5.3.tgz
-    version: 9.5.3
-generated: "2020-12-12T18:32:16.707281903Z"
+    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-9.5.4/prometheus-9.5.4.tgz
+    version: 9.5.4
+generated: "2020-12-18T23:51:24.202964496Z"
