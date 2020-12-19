@@ -71,10 +71,7 @@ spec:
               mountPath: /etc/config
             - name: storage-volume
               mountPath: "{{ .Values.alertmanager.persistentVolume.mountPath }}"
-              subPath: "{{ .Values.alertmanager.persistentVolume.subPath }}"
-            - name: email-config
-              mountPath: /etc/config/email
-              readOnly: true         
+              subPath: "{{ .Values.alertmanager.persistentVolume.subPath }}"      
           {{- range .Values.alertmanager.extraSecretMounts }}
             - name: {{ .name }}
               mountPath: {{ .mountPath }}
@@ -123,9 +120,6 @@ spec:
           secret:
             secretName: {{ .Values.alertmanager.configFromSecret }}
           {{- end }}
-        - name: email-config
-          configMap:
-            name: {{ template "prometheus.alertmanager.fullname" . }}-email-config
       {{- range .Values.alertmanager.extraSecretMounts }}
         - name: {{ .name }}
           secret:
