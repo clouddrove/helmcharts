@@ -2,15 +2,12 @@ apiVersion: v1
 entries:
   prometheus:
   - apiVersion: v1
-    appVersion: 2.13.1
-    created: "2020-12-19T00:48:23.167612532Z"
+    appVersion: 2.22.0
+    created: "2020-12-19T01:22:08.211430938Z"
     description: Prometheus is a monitoring system and time series database.
-    digest: 80461ca557ebab4524f684dd388ab3fe036fafbcfd1303bbcc580ebc645623eb
+    digest: 7a35c6299dd1c1e9a1a53d7e1720c74537d1d91e7ece347b78f5e97df9990d99
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    maintainers:
-    - email: anmol@clouddrove.com
-      name: Anmol
     name: prometheus
     sources:
     - https://github.com/prometheus/alertmanager
@@ -19,6 +16,6 @@ entries:
     - https://github.com/prometheus/node_exporter
     - https://github.com/kubernetes/kube-state-metrics
     urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-9.5.6/prometheus-9.5.6.tgz
-    version: 9.5.6
-generated: "2020-12-19T00:48:23.054555286Z"
+    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-9.5.8/prometheus-9.5.8.tgz
+    version: 9.5.8
+generated: "2020-12-19T01:22:08.066690544Z"
