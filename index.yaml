@@ -1,21 +1,22 @@
 apiVersion: v1
 entries:
-  prometheus-node-exporter:
+  kube-state-metrics:
   - apiVersion: v1
-    appVersion: 1.0.1
-    created: "2020-12-23T00:32:23.607340854Z"
+    appVersion: 1.9.7
+    created: "2020-12-23T00:57:27.01145543Z"
     deprecated: true
-    description: prometheus node-exporter
-    digest: 927f90700d05d57aa98a4633f55c88afd5006860dc13810cdf0a9b3262deb03f
-    home: https://github.com/prometheus/node_exporter/
+    description: Install kube-state-metrics to generate and expose cluster-level metrics
+    digest: e6feebf818b4d8936dbe4d8df1592353d74234981f7846c0063752203e7dc4e8
+    home: https://github.com/kubernetes/kube-state-metrics/
     keywords:
-    - node-exporter
+    - metric
+    - monitoring
     - prometheus
-    - exporter
-    name: prometheus-node-exporter
+    - kubernetes
+    name: kube-state-metrics
     sources:
-    - https://github.com/prometheus/node_exporter/
+    - https://github.com/kubernetes/kube-state-metrics/
     urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-node-exporter-1.11.2/prometheus-node-exporter-1.11.2.tgz
-    version: 1.11.2
-generated: "2020-12-23T00:32:23.473646002Z"
+    - https://github.com/clouddrove/helmcharts/releases/download/kube-state-metrics-2.9.4/kube-state-metrics-2.9.4.tgz
+    version: 2.9.4
+generated: "2020-12-23T00:57:26.900141662Z"
