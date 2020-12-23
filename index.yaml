@@ -1,21 +1,21 @@
 apiVersion: v1
 entries:
-  prometheus:
+  prometheus-node-exporter:
   - apiVersion: v1
-    appVersion: 2.22.0
-    created: "2020-12-19T03:48:18.349614613Z"
-    description: Prometheus is a monitoring system and time series database.
-    digest: 929d277220c81b3e2bf792e3f650d151c11174935c463a22cc5abfb264291b47
-    home: https://prometheus.io/
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    name: prometheus
+    appVersion: 1.0.1
+    created: "2020-12-23T00:32:23.607340854Z"
+    deprecated: true
+    description: prometheus node-exporter
+    digest: 927f90700d05d57aa98a4633f55c88afd5006860dc13810cdf0a9b3262deb03f
+    home: https://github.com/prometheus/node_exporter/
+    keywords:
+    - node-exporter
+    - prometheus
+    - exporter
+    name: prometheus-node-exporter
     sources:
-    - https://github.com/prometheus/alertmanager
-    - https://github.com/prometheus/prometheus
-    - https://github.com/prometheus/pushgateway
-    - https://github.com/prometheus/node_exporter
-    - https://github.com/kubernetes/kube-state-metrics
+    - https://github.com/prometheus/node_exporter/
     urls:
-    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-9.5.9/prometheus-9.5.9.tgz
-    version: 9.5.9
-generated: "2020-12-19T03:48:18.203657412Z"
+    - https://github.com/clouddrove/helmcharts/releases/download/prometheus-node-exporter-1.11.2/prometheus-node-exporter-1.11.2.tgz
+    version: 1.11.2
+generated: "2020-12-23T00:32:23.473646002Z"
